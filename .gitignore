@@ -1,0 +1,14 @@
+node_modules/
+dist/
+release/
+release-*/
+release-install/
+mcp/.venv/
+ai-service/.venv/
+model/
+ai-service/workspace/
+mcp/.ruff_cache/
+**/__pycache__/
+*.py[cod]
+*.log
+.DS_Store

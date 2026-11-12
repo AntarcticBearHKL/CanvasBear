@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "Baloo 2";
+  src: url("../assets/fonts/Baloo2-Variable.ttf") format("truetype");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: light;
+  --font-sans: "Baloo 2", "Resource Han Rounded SC", "Yuanti SC", "YouYuan",
+    "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+
+  /* Porcelain-neutral light palette: no yellow/beige cast. */
+  --background: #f5f6f7;
+  --foreground: #1f2328;
+  --brand: #d95f3d;
+  --brand-foreground: #ffffff;
+  --brand-soft: #fcece6;
+  --hover: rgba(31, 35, 40, 0.06);
+  --border: #dce1e5;
+  --border-strong: #b9c2ca;
+  --muted: #eef1f3;
+  --muted-foreground: #66717b;
+  --card: #ffffff;
+  --danger: #b42318;
+
+  --node-text: #1f2328;
+  --node-muted: #66717b;
+  --node-faint: #8b949d;
+  --node-panel: #ffffff;
+  --node-placeholder: #9aa3ac;
+  --toolbar-panel: #ffffff;
+  /* Neutral screen-anchored dot grid. */
+  --canvas-dot: rgba(116, 124, 132, 0.24);
+  --node-accent: #d95f3d;
+  --node-accent-text: #b64527;
+  --node-accent-soft: #fcece6;
+
+  --glass-content: #f5f6f7;
+  --glass-panel: #f8f9fa;
+  --glass-panel-strong: #ffffff;
+  --glass-panel-border: #dce1e5;
+  --window-tint: #f5f6f7;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+  --radius-xl: 14px;
+  --radius-window: 10px;
+
+  --titlebar-h: 84px;
+  --sidebar-w: 240px;
+  --row-h: 48px;
+  --motion-hover: 110ms;
+  --motion-press: 90ms;
+  --motion-select: 150ms;
+  --blur: 40px;
+}
+
+html.dark {
+  color-scheme: dark;
+  --background: #14171a;
+  --foreground: #f2f4f6;
+  --brand: #f08a66;
+  --brand-foreground: #1a1d20;
+  --brand-soft: rgba(240, 138, 102, 0.16);
+  --hover: rgba(255, 255, 255, 0.07);
+  --border: #343a40;
+  --border-strong: #4b545d;
+  --muted: #22272b;
+  --muted-foreground: #b5bec6;
+  --card: #1d2226;
+  --danger: #f97066;
+
+  --node-text: #f2f4f6;
+  --node-muted: #b5bec6;
+  --node-faint: #8d979f;
+  --node-panel: #1d2226;
+  --node-placeholder: #8d979f;
+  --toolbar-panel: #22272b;
+  --canvas-dot: rgba(196, 202, 208, 0.18);
+  --node-accent: #f08a66;
+  --node-accent-text: #ffb097;
+  --node-accent-soft: rgba(240, 138, 102, 0.16);
+
+  --glass-content: #14171a;
+  --glass-panel: #1a1e22;
+  --glass-panel-strong: #20252a;
+  --glass-panel-border: #343a40;
+  --window-tint: #14171a;
+}

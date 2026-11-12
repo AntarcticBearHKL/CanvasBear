@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' ws://127.0.0.1:5173 https:;"
+    />
+    <title>OpenCanvas</title>
+    <style>
+      #boot-splash {
+        position: fixed;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        gap: 14px;
+        background: #f4f1eb;
+        color: #26221d;
+        font-family: "Microsoft YaHei", system-ui, sans-serif;
+        font-size: 28px;
+        font-weight: 750;
+        letter-spacing: -0.02em;
+        z-index: 9999;
+      }
+      #boot-splash::after {
+        content: "";
+        position: absolute;
+        width: 108px;
+        height: 2px;
+        margin-top: 58px;
+        border-radius: 2px;
+        background: linear-gradient(90deg, transparent, #d85c3a, transparent);
+        animation: boot-sweep 900ms ease-in-out infinite;
+      }
+      @keyframes boot-sweep {
+        0%, 100% { opacity: 0.25; transform: scaleX(0.35); }
+        50% { opacity: 1; transform: scaleX(1); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"><div id="boot-splash" aria-hidden="true">Canvas</div></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
